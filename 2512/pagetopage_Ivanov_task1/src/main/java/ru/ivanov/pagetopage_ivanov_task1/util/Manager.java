@@ -16,12 +16,12 @@ public class Manager {
     public static void showMainStage(Stage stage, String fxmlFileName, String title){
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxmlFileName));
         try{
-            Scene scene = new Scene(fxmlLoader.load(),600, 800);
+            Scene scene = new Scene(fxmlLoader.load());
+            stage.setResizable(false);
             stage.setScene((scene));
             stage.setTitle(title);
             stage.setMinHeight(200);
             stage.setMinWidth(300);
-            stage.setMaximized(true);
             mainStage = stage;
             stage.show();
         } catch (IOException e) {
@@ -31,7 +31,8 @@ public class Manager {
     public static void showSecondStage(String fxmlFileName, String title){
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxmlFileName));
         try {
-            Scene scene = new Scene(fxmlLoader.load(), screenSize.getWidth(), screenSize.getHeight()-50);
+            Scene scene = new Scene(fxmlLoader.load());
+            mainStage.setResizable(false);
             mainStage.setScene((scene));
             mainStage.setTitle(title);
             mainStage.show();

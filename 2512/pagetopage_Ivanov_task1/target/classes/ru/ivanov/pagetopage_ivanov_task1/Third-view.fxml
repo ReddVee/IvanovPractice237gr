@@ -9,20 +9,25 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ivanov.pagetopage_ivanov_task1.controller.ThirdController">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ivanov.pagetopage_ivanov_task1.controller.ThirdController">
    <children>
       <BorderPane layoutX="200.0" prefHeight="285.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
-            <HBox prefHeight="40.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <HBox prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
                <children>
                   <Button mnemonicParsing="false" onAction="#BackOnAction" prefHeight="25.0" prefWidth="135.0" text="Назад">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                   </Button>
+                  <Label prefHeight="25.0" prefWidth="260.0" text="MARATHON SKILLS 2016" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Label>
                   <Button mnemonicParsing="false" onAction="#LogoutOnAction" prefHeight="25.0" prefWidth="137.0" text="Logout">
                      <HBox.margin>
-                        <Insets bottom="5.0" left="480.0" right="5.0" top="5.0" />
+                        <Insets bottom="5.0" left="200.0" right="5.0" top="5.0" />
                      </HBox.margin>
                   </Button>
                </children>
@@ -73,7 +78,7 @@
                         </HBox>
                      </children>
                   </VBox>
-                  <HBox alignment="TOP_CENTER" prefHeight="130.0" prefWidth="600.0">
+                  <HBox alignment="TOP_CENTER" prefHeight="40.0" prefWidth="600.0">
                      <children>
                         <Button mnemonicParsing="false" onAction="#LoginOnAction" text="Login">
                            <HBox.margin>
@@ -84,6 +89,12 @@
                               <Insets left="10.0" />
                            </HBox.margin>
                         </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="50.0" prefWidth="600.0" />
+                  <HBox alignment="CENTER" prefHeight="41.0" prefWidth="200.0" style="-fx-background-color: #505050;">
+                     <children>
+                        <Label text="18 дней 8 часов и 17 минут до старта марафона!" textFill="WHITE" />
                      </children>
                   </HBox>
                </children>

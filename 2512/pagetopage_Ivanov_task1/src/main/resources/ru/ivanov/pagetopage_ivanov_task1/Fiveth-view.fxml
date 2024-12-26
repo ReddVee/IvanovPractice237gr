@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ivanov.pagetopage_ivanov_task1.controller.FourthController">
+   <children>
+      <BorderPane layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <VBox prefHeight="40.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #505050;">
+                     <children>
+                        <Label text="18 дней 8 часов и 17 минут до старта марафона!" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </bottom>
+         <top>
+            <VBox prefHeight="115.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #505050;">
+                     <children>
+                        <Button mnemonicParsing="false" text="Button">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Label prefHeight="25.0" prefWidth="250.0" text="MARATHON SKILLS 2016" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" text="Button">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="200.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="25.0" text="Регистрация на марафон" textFill="#9e9c9c" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="600.0">
+                     <children>
+                        <Label prefHeight="129.0" prefWidth="600.0" text="Пожалуйста заполните всю информацию, чтобы зарегистрироваться на SkillsMarathon 2016 проводимом в Москве. Russia. С вами свяжутся послерегистрации для уточнения оплаты и другой информации." wrapText="true" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <left>
+            <VBox prefHeight="245.0" prefWidth="260.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="25.0" text="Вид марафона" textFill="#9a9a9a" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="25.0" text="42km Полный марафон($145)" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="25.0" text="21km Полумарафон ($75)" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox mnemonicParsing="false" prefHeight="25.0" text="5km Малая дистанция ($20)" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="25.0" text="Детали спонсорства" textFill="#b2b0b0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="25.0" text="Взнос: " />
+                        <ComboBox prefWidth="150.0" promptText="Фонд кошек">
+                           <HBox.margin>
+                              <Insets right="12.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="25.0" text="Сумма взноса: " />
+                        <TextField promptText="\$500" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Регистрация">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button mnemonicParsing="false" text="Отмена">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="340.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Варианты комплектов" textFill="#a1a1a1" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="300.0">
+                     <children>
+                        <RadioButton mnemonicParsing="false" prefHeight="35.0" prefWidth="330.0" text=" Вариант A ($0): Номер бегуна+RFID браслет." />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton mnemonicParsing="false" prefHeight="25.0" text="Вариант B ($20): вариант A +бейсболка + бутылка воды." />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton mnemonicParsing="false" text="RadioButton" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
