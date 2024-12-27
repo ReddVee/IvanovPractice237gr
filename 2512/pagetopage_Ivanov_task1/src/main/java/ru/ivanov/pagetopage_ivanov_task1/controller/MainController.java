@@ -19,7 +19,7 @@ public class MainController {
 
     @FXML
     void LoginOnAction(ActionEvent event) {
-        showSecondStage("Second-view.fxml","Marathon Skills 2016 - Register as a runner");
+        showSecondStage("Fourth-view.fxml","Marathon Skills 2016");
     }
 
     @FXML

@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ivanov.pagetopage_ivanov_task1.controller.MainController">
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ivanov.pagetopage_ivanov_task1.controller.SixthController">
    <children>
-      <BorderPane layoutX="200.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <BorderPane layoutX="200.0" prefHeight="285.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
             <HBox prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
                <children>
@@ -37,37 +37,41 @@
             </HBox>
          </top>
          <center>
-            <VBox prefHeight="390.0" prefWidth="440.0" BorderPane.alignment="CENTER">
+            <VBox prefHeight="360.0" prefWidth="440.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0">
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
                      <children>
-                        <Label text="Москва, Россия среда 21 октября 2016" />
+                        <Label prefHeight="40.0" prefWidth="414.0" text="Спасибо за вашу регистрацию в качестве бегуна!" textFill="GREY">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Спасибо за вашу регистрацию в качестве бегуна в Marathon Skills 2016!" textFill="#808080">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Label text="С вами свяжутся по поводу оплаты." textFill="GREY">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#BegunOnAction" prefHeight="40.0" style="-fx-background-radius: 10;" text="Я хочу стать бегуном" />
+                        <Button mnemonicParsing="false" onAction="#OkOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-radius: 10;" text="OK" />
                      </children>
                   </HBox>
-                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="40.0" style="-fx-background-radius: 10;" text="Я хочу стать спонсором бегуна" />
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="40.0" style="-fx-background-radius: 10;" text="Я хочу узнать больше о событии" />
-                     </children>
-                  </HBox>
-                  <HBox alignment="BOTTOM_RIGHT" prefHeight="70.0" prefWidth="600.0">
-                     <children>
-                        <Button mnemonicParsing="false" onAction="#LoginOnAction" style="-fx-background-radius: 10;" text="Login">
-                           <HBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </HBox.margin></Button>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #505050;">
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="140.0" prefWidth="600.0" />
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #505050;">
                      <children>
                         <Label text="18 дней 8 часов и 17 минут до старта марафона!" textFill="WHITE" />
                      </children>

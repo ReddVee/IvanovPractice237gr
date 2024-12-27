@@ -1,11 +1,16 @@
 package ru.ivanov.pagetopage_ivanov_task1.util;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import ru.ivanov.pagetopage_ivanov_task1.HelloApplication;
+import ru.ivanov.pagetopage_ivanov_task1.controller.FourthController;
 
 import java.io.IOException;
 
@@ -13,9 +18,10 @@ import java.io.IOException;
 public class Manager {
     public static Stage mainStage;
     public static Rectangle2D screenSize = Screen.getPrimary().getVisualBounds();
-    public static void showMainStage(Stage stage, String fxmlFileName, String title){
+
+    public static void showMainStage(Stage stage, String fxmlFileName, String title) {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxmlFileName));
-        try{
+        try {
             Scene scene = new Scene(fxmlLoader.load());
             stage.setResizable(false);
             stage.setScene((scene));
@@ -28,7 +34,8 @@ public class Manager {
             throw new RuntimeException(e);
         }
     }
-    public static void showSecondStage(String fxmlFileName, String title){
+
+    public static void showSecondStage(String fxmlFileName, String title) {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxmlFileName));
         try {
             Scene scene = new Scene(fxmlLoader.load());
@@ -40,4 +47,5 @@ public class Manager {
             throw new RuntimeException(e);
         }
     }
+
 }

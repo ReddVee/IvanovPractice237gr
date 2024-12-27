@@ -9,27 +9,27 @@ public class SecondController {
 
     @FXML
     void BackOnAction(ActionEvent event) {
-        showSecondStage("Begun-view.fxml","Marathon Skills 2016");
+            showSecondStage("Begun-view.fxml","");
     }
 
     @FXML
     void LoginOnAction(ActionEvent event) {
-
+            showSecondStage("Third-view.fxml","");
     }
 
     @FXML
     void LogoutOnAction(ActionEvent event) {
-        showSecondStage("Begun-view.fxml","Marathon Skills 2016");
+            showSecondStage("Begun-view.fxml","");
     }
 
     @FXML
     void NoviOnAction(ActionEvent event) {
-            showSecondStage("Fourth-view.fxml", "Marathon Skills 2016 - Register as a runner");
+            showSecondStage("Fourth-view.fxml", "");
     }
 
     @FXML
     void RaneeOnAction(ActionEvent event) {
-        showSecondStage("Third-view.fxml","Marathon Skills 2016 - Login");
+            showSecondStage("Third-view.fxml","");
     }
 
 }

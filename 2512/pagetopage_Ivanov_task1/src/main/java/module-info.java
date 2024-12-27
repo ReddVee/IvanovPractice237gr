@@ -1,6 +1,7 @@
 module ru.ivanov.pagetopage_ivanov_task1 {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens ru.ivanov.pagetopage_ivanov_task1 to javafx.fxml;
